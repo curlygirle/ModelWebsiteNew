@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>erin harper</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/161eb88f79.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="navbar" id="navBar">
+          <i class="fa fa-thin fa-xmark" onclick="closeMenu()"></i>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="devblogs.html">devblogs</a></li>
+            <li><a href="essay.html">essay</a></li>
+            <li><a href="design.html">design</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-thin fa-bars" onclick="openMenu()"></i>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="hero-text">
+          <h1>i am <span class="input"></span></h1>
+      </div>
+  </div>
+
+  <script type="text/javascript" src="javacsript.js"></script>
+
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+  <script>
+      var Typed = new Typed(".input", {
+          strings:["erin pfeiffer harper","a supermodel","a web developer"],
+          typeSpeed: 70,
+          backSpeed: 60,
+          loop: true
+      });
+  </script>
+
+    <main class="l-main bd-grid">
+      <div class="home">
+        <div class="home__img">
+          <!-- Parar ver el efecto de hover effect abra la pagina web en localhost -->
+        </div>
+    </main>
+
+    <!-- Main JS -->
+    <script src="javacsript.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <!-- THREE JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+      integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var navBar = document.getElementById("navBar");
+      function openMenu() {
+        navBar.style.left = "0";
+      }
+      function closeMenu() {
+        navBar.style.left = "-200px";
+      }
+    </script>
+  </body>
+</html>
